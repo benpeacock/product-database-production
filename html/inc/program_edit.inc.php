@@ -24,7 +24,8 @@ foreach ($tabs as $tab) {
 				?>
 				<label><?php echo $question['question']; ?></label>
 				<div class="col-sm-11"><textarea class="form-control marginbottom20" id="copylast-<?php echo $question['id']; ?>" name="<?php echo $question['id']; ?>"><?php echo $answer->answer; ?></textarea></div>
-				<div class="col-sm-1"><button type="button" name="<?php echo $question['id']; ?>" onclick="copyLast('<?php echo $question['id']; ?>')" class="btn">Copy</button></div>
+				<div class="col-sm-1"><button type="button" name="<?php echo $question['id']; ?>" onclick="copyLast('<?php echo $question['id']; ?>')" 
+class="btn">Copy from Last Year</button></div>
 				<?php
 				break;
 			case (3):
