@@ -32,14 +32,8 @@ foreach ($tabs as $tab) {
 				<div class="clearfix marginbottom20">
 				<label class="col-sm-6 control-label"><?php echo $question['question']; ?></label>
 				<div class="input-group col-sm-6">
-			    	<input type="date" class="form-control" name="<?php echo $question['id']; ?>" value="<?php echo $answer->answer; ?>">
-			      	<div class="input-group-btn">
-				        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Copy <span class="caret"></span></button>
-				        <ul class="dropdown-menu pull-right">
-				          <li><a href="#">Copy from last year</a></li>
-				        </ul>
-			      </div><!-- /btn-group -->
-			    </div><!-- /input-group -->
+			    	<input type="date" class="form-control" name="<?php echo $question['id']; ?>" value="<?php echo $answer->answer; ?>">			    
+				</div><!-- /input-group -->
 			    </div>
 			    <?php
 				break;
