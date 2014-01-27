@@ -14,18 +14,22 @@ foreach ($tabs as $tab) {
 		switch ($question['type']) {
 			case (1):
 				?>
+				<div class="clearfix">
 				<label class="col-sm-3 control-label"><?php echo $question['question']; ?></label>
 				<div class="col-sm-9 marginbottom20">
 				<input type="text" name="<?php echo $question['id']; ?>" class="form-control" value="<?php echo $answer->answer; ?>">
+				</div>
 				</div>
 				<?php
 				break;
 			case (2):
 				?>
+				<div class="clearfix">
 				<label><?php echo $question['question']; ?></label>
 				<div class="col-sm-11"><textarea class="form-control marginbottom20" id="copylast-<?php echo $question['id']; ?>" name="<?php echo $question['id']; ?>"><?php echo $answer->answer; ?></textarea></div>
 				<div class="col-sm-1"><button type="button" name="<?php echo $question['id']; ?>" onclick="copyLast('<?php echo $question['id']; ?>')" 
 class="btn">Copy from Last Year</button></div>
+				</div>
 				<?php
 				break;
 			case (3):
