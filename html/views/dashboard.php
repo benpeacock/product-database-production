@@ -5,7 +5,12 @@ if (isset($_GET['id'])) {
 	$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 	if (filter_var($id, FILTER_VALIDATE_INT) == false) { exit('Invalid program id.'); }
 	$program = Program::getProgramObject($id);
+	// See if user is in editing mode or display mode
+	if (isset($_GET['action']) && $_GET['action'] == 'edit') {
 	echo '<h3>Editing: ' . $program->name;
+	} else {
+	echo '<h3>' . $program->name;
+	}
 	// See if year is set in URL
 	if (isset($_GET['year'])) {
 		// if year is set, display it
