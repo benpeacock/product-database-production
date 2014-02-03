@@ -37,7 +37,7 @@ class="btn">Copy from Last Year</button></div>
 				<div class="clearfix marginbottom20">
 				<label class="col-sm-6 control-label"><?php echo $question['question']; ?></label>
 				<div class="input-group col-sm-6">
-			    	<input type="date" class="form-control" name="<?php echo $question['id']; ?>" value="<?php echo $answer->answer; ?>">			    
+			    	<input type="text" class="form-control" name="<?php echo $question['id']; ?>" value="<?php echo $answer->answer; ?>">			    
 				</div><!-- /input-group -->
 			    </div>
 			    <?php
